@@ -1,3 +1,4 @@
+import domain.models.Cliente;
 import domain.models.Cuenta;
 import domain.models.hipoteca;
 
@@ -18,7 +19,11 @@ public class Main {
         hipoteca.setId("54363tr");
         hipoteca.setIntereses("45");
 
-        cliente cliente = new cliente();
+        Cliente cliente =new Cliente();
+        cliente.setDireccion("direcion 1");
+        cliente.setCodigoPostal("3234");
+        cliente.setNombre("pepe");
+        cliente.setDni("324r2345");
 
 
 
@@ -32,8 +37,8 @@ public class Main {
         int numero = sc.nextInt();
         switch (numero) {
             case 1: {
-                System.out.println("Cliente con el numero de cuenta: " + cuenta.getNCuenta());
-                System.out.println("Con el titulo:" + cuenta.getTitulo());
+                System.out.println("Cliente con el numero de cuenta: " + cliente.getNombre() + cliente.getCodigoPostal()
+                + cliente.getDni());
             }
             case 2: {
                 System.out.println("Productos con el numero de cuenta: " + cuenta.getNCuenta());
@@ -42,8 +47,8 @@ public class Main {
 
 
             case 3: {
-                System.out.println("Hipotecas con el numero de cuenta: " + cuenta.getNCuenta());
-                System.out.println("Con el titulo:" + cuenta.getTitulo());
+                System.out.println("Hipotecas con el numero de cuenta: " + hipoteca.getId() + hipoteca.getDescripcion());
+
             }
             case 4: {
                 System.out.println("cuenta con el numero de cuenta: " + cuenta.getNCuenta());
