@@ -6,21 +6,37 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class PlazoFijo {
+public class PlazoFijo implements ProductosBancarios{
 
-    private  String id;
-    private  String nombre;
-    private String descripcion;
-    private Date duraciion;
-    private Integer interes;
+  private  String Id;
+  private String nombre;
+  private String descripcion;
+  private Date duracion;
+  private Integer interese;
 
 
+    @Override
     public String getId() {
-        return id;
+        return Id;
+    }
+
+    @Override
+    public String getdescripcion() {
+        return null;
+    }
+
+    @Override
+    public String getnombre() {
+        return null;
+    }
+
+    @Override
+    public String getduraciion() {
+        return null;
     }
 
     public void setId(String id) {
-        this.id = id;
+        Id = id;
     }
 
     public String getNombre() {
@@ -39,24 +55,22 @@ public class PlazoFijo {
         this.descripcion = descripcion;
     }
 
-    public Date getDuraciion() {
-        return duraciion;
+    public Date getDuracion() {
+        return duracion;
     }
 
-    public void setDuraciion(Date duraciion) {
-        this.duraciion = duraciion;
+    public void setDuracion(Date duracion) {
+        this.duracion = duracion;
     }
 
-    public Integer getInteres() {
-        return interes;
+    public Integer getInterese() {
+        return interese;
     }
 
-    public void setInteres(Integer interes) {
-        this.interes = interes;
+    public void setInterese(Integer interese) {
+        this.interese = interese;
     }
-
-
-    }
+}
 
 
 

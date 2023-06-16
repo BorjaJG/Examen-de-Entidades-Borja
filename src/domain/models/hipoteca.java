@@ -1,6 +1,6 @@
 package domain.models;
 
-public class hipoteca {
+public class hipoteca  implements ProductosBancarios{
     private  String id;
     private  String nombre;
     private String descripcion;

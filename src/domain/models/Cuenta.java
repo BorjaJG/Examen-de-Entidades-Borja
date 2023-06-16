@@ -1,6 +1,6 @@
 package domain.models;
 
-public class Cuenta {
+public class Cuenta extends  Persona{
 
     private  String NCuenta;
     private  String titulo;
